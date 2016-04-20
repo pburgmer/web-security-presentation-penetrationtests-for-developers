@@ -1,0 +1,25 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Code Review - XSS
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Potenzielles Problem: Übernahme von Benutzereingaben in HTML Ausgabe</li>
+      <li>ToDo: Suche nach Auslesen von Query Parametern<br>
+        Java: <code>getParameter</code>, <code>getQueryString</code>, <code>getHeader</code>, <code>getCookies</code>, ...
+      </li>
+    </ul>
+
+<pre w11k-pretty-print lang="java">
+private void setTitle(final HttpServletRequest request) {
+  final String requestType = request.getParameter("type");
+  if ("history".equals(requestType) && request.getParameter("title") != null)
+    title = request.getParameter("title");
+  else
+    title = DEFAULT_TITLE;
+}
+</pre>
+  </div>
+
+</div>
