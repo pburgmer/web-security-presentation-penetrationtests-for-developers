@@ -64,13 +64,16 @@
       'code-review/advantages',
       'code-review/interesting-parts',
       'code-review/tools',
-      'code-review/example-xss',
+      'code-review/approach',
+      'code-review/example-input',
       'code-review/example-sql-injection',
       'code-review/example-path-traversal',
       'code-review/example-comments',
       //'code-review/hands-on',
 
+      'summary-title',
       'summary',
+      
       'end'
     ];
 
