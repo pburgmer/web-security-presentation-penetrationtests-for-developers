@@ -41,11 +41,11 @@
       'blackbox-testing/access-handling/title',
       'blackbox-testing/access-handling/overview',
       'blackbox-testing/access-handling/auth-procedure',
-      'blackbox-testing/access-handling/auth-hands-on',
+      // 'blackbox-testing/access-handling/auth-hands-on',
       'blackbox-testing/access-handling/session-procedure',
-      'blackbox-testing/access-handling/session-hands-on',
+      // 'blackbox-testing/access-handling/session-hands-on',
       'blackbox-testing/access-handling/access-procedure',
-      'blackbox-testing/access-handling/access-hands-on',
+      // 'blackbox-testing/access-handling/access-hands-on',
       'blackbox-testing/access-handling/automate',
       'blackbox-testing/access-handling/for-developers',
 
@@ -64,13 +64,16 @@
       'code-review/advantages',
       'code-review/interesting-parts',
       'code-review/tools',
-      'code-review/example-xss',
+      'code-review/approach',
+      'code-review/example-input',
       'code-review/example-sql-injection',
       'code-review/example-path-traversal',
       'code-review/example-comments',
       //'code-review/hands-on',
 
+      'summary-title',
       'summary',
+      
       'end'
     ];
 

@@ -1,14 +1,15 @@
 <div w11k-slide-master="regular">
   <div w11k-slide-part-source="header">
-    Code Review - XSS
+    Code Review - Datenfluss Benutzereingaben
   </div>
 
   <div w11k-slide-part-source="content">
     <ul class="simple">
-      <li>Potenzielles Problem: Übernahme von Benutzereingaben in HTML Ausgabe</li>
-      <li>ToDo: Suche nach Auslesen von Query Parametern<br>
+      <li>Potenzielles Problem: Übernahme von Benutzereingaben in Code für anderes System (Injection)</li>
+      <li>Suche nach API Aufrufen zum Auslesen des HTTP Requests<br>
         Java: <code>getParameter</code>, <code>getQueryString</code>, <code>getHeader</code>, <code>getCookies</code>, ...
       </li>
+      <li>Datenfluss verfolgen</li>
     </ul>
 
 <pre w11k-pretty-print lang="java">
