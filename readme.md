@@ -1,6 +1,6 @@
-# TheCodeCampus Tutorial - Penetrationtests for Developers - Slides
+# TheCodeCampus Präsentation - Penetrationtests for Developers
 
-Dieses Repository enthält die Präsentation zu meinem Tutorial 'Penetrationstests für Entwickler'.
+Dieses Repository enthält die Präsentation zu meinem Vortrag 'Penetrationstests für Entwickler'.
 
 ## Zusammenfassung
 
