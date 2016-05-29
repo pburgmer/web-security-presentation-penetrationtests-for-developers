@@ -120,6 +120,7 @@ $w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
           }
 
           text-align: center;
+          text-shadow: 1px 1px 3px white;
         }
       }
     }
@@ -147,6 +148,7 @@ $w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
       > div {
         text-align: center;
         color: black;
+        text-shadow: 1px 1px 3px white;
         a, a:visited, a[href^="http"], a[href^="mailto"] {
           color: black;
           text-decoration: none;
