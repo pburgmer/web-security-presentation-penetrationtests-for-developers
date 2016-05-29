@@ -1,29 +1,20 @@
+@import "boxed-variables";
+
 $jax_blue: #005a98;
 $jax_green: #c8cb00;
 
 $tcc_orange: $jax_green;
-$tcc-gray: #1c2330;
-$tcc-gray-light: lighten($tcc-gray, 20%);
-$tcc-gray-lighter: lighten($tcc-gray, 40%);
-$tcc-gray-lightest: lighten($tcc-gray, 78%);
-$tcc-gradient-orange-start: #fc9253;
-$tcc-gradient-orange-end: #f26135;
-$tcc-code-bg-1: desaturate($tcc-gray-lightest, 50%);
-$tcc-code-bg-2: darken($tcc-code-bg-1, 5%);
-$tcc-code-bg-3: darken($tcc-code-bg-1, 20%);
 
 $tcc2016-title-background-start: lighten($jax_blue, 3%);
 $tcc2016-title-background-end: darken($jax_blue, 3%);
-$tcc2016-title-highlight-background-start: darken($jax_green, 1%);
-$tcc2016-title-highlight-background-end: lighten($jax_green, 3%);
-
-$tcc2016-title-background-start: #fc9253 !default;
-$tcc2016-title-background-end: #f26135 !default;
 $tcc2016-title-background: linear-gradient(to right, $tcc2016-title-background-start, $tcc2016-title-background-end) !default;
 
-$tcc2016-title-highlight-background-start: $tcc-gray !default;
-$tcc2016-title-highlight-background-end: lighten($tcc-gray, 7%) !default;
+$tcc2016-title-highlight-background-start: darken($jax_green, 1%);
+$tcc2016-title-highlight-background-end: lighten($jax_green, 3%);
 $tcc2016-title-highlight-background: linear-gradient(to right, $tcc2016-title-highlight-background-start, $tcc2016-title-highlight-background-end) !default;
+
+$tcc-regular-header-background: $tcc2016-title-background;
+$tcc-regular-footer-background: $tcc2016-title-background;
 
 // ****************************************************************************************************
 // general
@@ -38,7 +29,7 @@ $table-bg-accent: $tcc-code-bg-1;
 
 // Reset
 @import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/normalize";
-@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/print";
+//@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/print";
 
 // Core CSS
 @import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
@@ -65,86 +56,15 @@ $w11k-cornerRibbon-distance: 5em;
 $w11k-cornerRibbon-background-color: linear-gradient(to left, $tcc-gray, lighten($tcc-gray, 7%));
 $w11k-cornerRibbon-border-color: $tcc-gradient-orange-end;
 
+$w11k-prettyPrint-line-color: $tcc-code-bg-1;
+$w11k-prettyPrint-line-color-alternate: $tcc-code-bg-2;
+$w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
+
 @import "w11k-slides/dist/variables";
 @import "w11k-slides/dist/slides/mixins";
 @import "w11k-slides/dist/corner-ribbon/corner-ribbon";
-//@import "w11k-slides/dist/w11k-slides";
 
-.tcc-2016 .slides > .slide-container > div > .slide {
-  $w11k-prettyPrint-line-color: $tcc-code-bg-1;
-  $w11k-prettyPrint-line-color-alternate: $tcc-code-bg-2;
-  $w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
-
-  @import "w11k-slides/dist/prettyprint/prettyprint";
-
-  code {
-    color: #48484c;
-    background-color: $w11k-prettyPrint-line-color;
-    font-family: "SourceCodePro";
-  }
-
-  .w11k-pretty-print {
-    font-weight: 200;
-
-    * {
-      font-family: "SourceCodePro";
-    }
-
-    pre.prettyprint {
-      font-size: 0.9em;
-      border-radius: 0;
-      border: 0;
-      margin-left: -0.6em;
-      margin-bottom: 0.7em;
-    }
-
-    pre.prettyprint.linenums ol.linenums > li {
-      $border-radius: 0.1em;
-
-      &:first-of-type {
-        border-top-left-radius: $border-radius;
-        border-top-right-radius: $border-radius;
-      }
-
-      &:last-of-type {
-        border-bottom-left-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
-      }
-
-      &:before {
-        color: $w11k-prettyPrint-line-color-alternate;
-      }
-
-      padding: 0 0.5em;
-      white-space: pre-wrap;
-      border-left: 0;
-    }
-  }
-}
-
-.slides.export {
-  font-size: 10px;
-
-  .img-responsive {
-    max-width: 10cm;
-    max-height: 10cm;
-  }
-}
-
-.slide {
-  a[href^="http"], a[href^="mailto"] {
-    text-decoration: underline;
-  }
-
-  img + ul, pre + ul {
-    margin-top: 1em;
-  }
-}
-
-.img-responsive.centered {
-  margin: 0 auto;
-}
-
+@import "boxed-print";
 @import "boxed";
 @import "overlay";
 
@@ -152,61 +72,94 @@ $w11k-cornerRibbon-border-color: $tcc-gradient-orange-end;
 // slides content
 // ****************************************************************************************************
 
+
 .tcc-2016 {
-  .slides > .slide-container > div > .slide {
-
-
+  .slides.export > .slide-container > div > .slide {
     &.title {
-      .logo img {
-        margin: 0 auto 0.5em;
-      }
+      font-size: 12pt;
 
       h1 {
-        margin: 0;
-        font-size: 2.5em;
+        font-size: 4em;
       }
+    }
+  }
 
-      h1, h1 small {
-        color: $tcc-gray;
-      }
+  .slides > .slide-container > div > .slide {
 
-      div.top {
-        div.logo img {
-          max-width: 100%;
-          max-height: 2em;
-        }
-      }
+    &.title {
 
-      .bottom {
-        background-size: auto 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
 
-        div.logos {
+      .top {
+        background: white;
+        border-bottom: 0.5em solid $jax_green;
+        height: 38vh;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+
+        .content {
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
 
+          padding: 1em;
+
           img {
-            margin: 0 1em;
+            max-height: 20vh;
+          }
+        }
+      }
+
+      .center {
+        flex: 1;
+        padding: 0 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        background: $jax_blue;
+
+        .content {
+        }
+
+        h1 {
+          color: white;
+
+          small {
+            color: white;
+            font-size: 0.5em;
+            display: block;
+            margin-bottom: 1em;
           }
         }
       }
     }
 
-    &.overview {
-      .content > div {
-        @include dyn-multi-column(1, 1, 2, 2, 0);
-      }
-    }
-
     &.end {
-      @include vcenter;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
       background: $tcc2016-title-background;
 
-      color: white;
-      a, a:visited, a[href^="http"], a[href^="mailto"] {
+      > div {
+        text-align: center;
         color: white;
-        text-decoration: none;
+        a, a:visited, a[href^="http"], a[href^="mailto"] {
+          color: white;
+          text-decoration: none;
+        }
       }
+
     }
   }
 }
