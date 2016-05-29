@@ -507,10 +507,10 @@ html, body, * {
           font-size: 1.5em;
           margin: 2em 10vw;
           padding: 0.3em 0 0.3em 1em;
-          border-left: 0.1em solid $tcc-gray-lighter;
+          border-left: 0.1em solid $tcc-quote-highlight;
 
           cite {
-            color: $tcc-gray-lighter;
+            color: $tcc-quote-highlight;
             font-size: 0.666em;
           }
         }

@@ -20,11 +20,9 @@
 
       'blackbox-testing/title',
       'blackbox-testing/overview',
-      'blackbox-testing/encoding',
       'blackbox-testing/kali-linux',
       'blackbox-testing/proxy',
       'blackbox-testing/zap-firefox',
-      'blackbox-testing/telnet',
       'blackbox-testing/hands-on',
 
       'blackbox-testing/analyse/title',
