@@ -1,20 +1,4 @@
-// ****************************************************************************************************
-// variables
-// ****************************************************************************************************
-
-$tcc_orange: #ed5502 !default;
-$tcc-gray: #1c2330 !default;
-$tcc-gray-light: lighten($tcc-gray, 20%) !default;
-$tcc-gray-lighter: lighten($tcc-gray, 40%) !default;
-$tcc-gray-lightest: lighten($tcc-gray, 78%) !default;
-$tcc-gradient-orange-start: #fc9253 !default;
-$tcc-gradient-orange-end: #f26135 !default;
-$tcc-code-bg-1: desaturate($tcc-gray-lightest, 50%) !default;
-$tcc-code-bg-2: darken($tcc-code-bg-1, 5%) !default;
-$tcc-code-bg-3: darken($tcc-code-bg-1, 20%) !default;
-
-$tcc-slide-title-background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
-$tcc-slide-title-center-background: linear-gradient(to right, $tcc-gray, lighten($tcc-gray, 7%));
+@import "boxed-variables";
 
 // ****************************************************************************************************
 // font
@@ -236,7 +220,7 @@ html, body, * {
         margin-top: $header-height * -1;
         margin-bottom: $header-offset;
 
-        background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
+        background: $tcc-regular-header-background;
 
         display: flex;
         align-items: stretch;
@@ -538,7 +522,7 @@ html, body, * {
         flex: none;
 
         height: 32px;
-        background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
+        background: $tcc-regular-footer-background;
 
         display: flex;
         align-items: stretch;
@@ -567,6 +551,7 @@ html, body, * {
           //padding-top: $footer-offset;
 
           background: url('assets/images/tcc-footer-bg-gray.svg') left bottom no-repeat;
+          background-size: cover;
           font-size: 0.7em;
           font-weight: 200;
 
