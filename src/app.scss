@@ -86,6 +86,17 @@ $w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
 
   .slides > .slide-container > div > .slide {
 
+    &.master-regular, &.master-section-title {
+      > .header {
+        .logo {
+          width: 5em;
+          margin: 0.4em;
+          background: url('assets/images/jax-2016-logo-white.png') center center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
     &.title {
 
       display: flex;
