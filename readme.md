@@ -1,6 +1,6 @@
 # TheCodeCampus Präsentation - Penetrationtests for Developers
 
-Dieses Repository enthält die Präsentation zu meinem Vortrag 'Penetrationstests für Entwickler'.
+Dieses Repository enthält die Präsentation zu meinem Vortrag 'Penetrationstests für Entwickler'. Eine PDF-Datei mit den Folien zum Vortrag liegt unter ```etc/pdf```.
 
 ## Zusammenfassung
 
