@@ -38,6 +38,7 @@
 
       'blackbox-testing/access-handling/title',
       'blackbox-testing/access-handling/overview',
+      'blackbox-testing/access-handling/overview-2',
       'blackbox-testing/access-handling/auth-procedure',
       // 'blackbox-testing/access-handling/auth-hands-on',
       'blackbox-testing/access-handling/session-procedure',
