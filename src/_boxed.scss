@@ -161,7 +161,7 @@ html, body, * {
           background: $tcc-slide-title-center-background;
 
           transform: rotate(3deg);
-          padding: 8% 5%;
+          padding: 8% 8%;
           margin: -4.5% 0 -4.5%;
         }
         h1, h1 small {
@@ -575,7 +575,7 @@ html, body, * {
       text-align: center;
       justify-content: center;
 
-      background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
+      background: $tcc-slide-end-background;
 
       color: white;
       a, a:visited, a[href^="http"], a[href^="mailto"] {
