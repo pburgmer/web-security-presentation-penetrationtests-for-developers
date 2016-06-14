@@ -52,7 +52,7 @@ $table-bg-accent: $tcc-code-bg-1;
 $theCodeCampus_orange: $tcc_orange;
 $w11k-cornerRibbon-distance: 5em;
 $w11k-cornerRibbon-background-color: linear-gradient(to left, $tcc-gray, lighten($tcc-gray, 7%));
-$w11k-cornerRibbon-border-color: $tcc-gradient-orange-end;
+$w11k-cornerRibbon-border-color: $tcc_orange;
 
 $w11k-prettyPrint-line-color: $tcc-code-bg-1;
 $w11k-prettyPrint-line-color-alternate: $tcc-code-bg-2;
@@ -109,7 +109,7 @@ $w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
       background-size: cover;
 
       display: flex;
-      width: 100vw;
+      width: 100%;
       height: 100%;
       padding-bottom: 16.5%;
 
