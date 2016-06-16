@@ -133,6 +133,12 @@ $w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
       }
     }
 
+    // quick and dirty fix for new chrome
+    &.master-regular > .header > .start {
+      background: url("assets/images/tcc-header-bg-gray.svg") 96% top no-repeat;
+      background-size: auto 100%;
+    }
+
     &.master-regular, &.master-section-title {
       > .header {
         .logo {
