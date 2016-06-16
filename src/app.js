@@ -14,6 +14,7 @@
       'intro/breach-origin',
       'intro/technologies',
       'intro/understand',
+      'intro/legal',
       'intro/we-and-security',
       'intro/getting-information',
       'intro/approaches',
@@ -69,6 +70,9 @@
       'code-review/example-path-traversal',
       'code-review/example-comments',
       //'code-review/hands-on',
+
+      'guide/title',
+      'guide/owasp-asvs',
 
       'summary-title',
       'summary',
