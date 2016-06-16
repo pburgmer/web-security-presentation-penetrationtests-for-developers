@@ -231,7 +231,7 @@ html, body, * {
           margin-bottom: $header-offset * -1;
           padding-bottom: $header-offset;
 
-          background: url('assets/images/tcc-header-bg-gray.svg') right top no-repeat;
+          background: url('assets/images/tcc-header-bg-gray.svg') 96% top no-repeat;
           background-size: auto 100%;
           width: $slide-padding-horizontal + (($header-height) * 0.7967 * 0.5);
           padding-right: 35px;
