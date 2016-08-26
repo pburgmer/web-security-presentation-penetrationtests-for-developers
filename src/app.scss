@@ -72,25 +72,6 @@ $w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
 
     }
 
-    &.end {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
 
-      background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
-
-      > div {
-        text-align: center;
-        color: white;
-        a, a:visited, a[href^="http"], a[href^="mailto"] {
-          color: white;
-          text-decoration: none;
-        }
-      }
-
-    }
   }
 }
