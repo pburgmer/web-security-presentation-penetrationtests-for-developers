@@ -77,6 +77,8 @@
       'summary-title',
       'summary',
       
+      'twitter',
+      
       'end'
     ];
 
